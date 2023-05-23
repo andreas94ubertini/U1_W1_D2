@@ -5,17 +5,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="descritpion" content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come inziare in modo facile">
+    <meta name="descritpion"
+        content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come inziare in modo facile">
     <title>Sviluppo di una pagine web - Blog Epicode</title>
+    <style>
+        body {
+            background-color: wheat;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+        }
+
+        #logo-epicode {
+            margin-right: 2%;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu li {
+            margin: auto;
+            list-style: none;
+        }
+
+        .menu li a {
+            display: block;
+            width: 115px;
+            height: 25px;
+            background: #3fc2e2;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+            line-height: 25px;
+            text-decoration: none;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid;
+        }
+
+        th,
+        td {
+            background-color: #3fc2e2;
+        }
+
+        iframe {
+            display: block;
+        }
+
+        footer {
+            border-top: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <img src="./assets/img/logo.svg" width="100px" alt="" />
+        <img id="logo-epicode" src="./assets/img/logo.svg" width="100px" alt="" />
         <h1>Epicode - il blog dei developers</h1>
     </header>
     <nav>
-        <ul>
+        <ul class="menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">Articoli</a></li>
             <li><a href="#">Lavora con noi</a></li>
@@ -97,7 +154,7 @@
                 </p>
             </article>
         </section>
-        <section>
+        <section class="">
             <h3>Vuoi rimanere sempre aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</h3>
             <form action="POST">
                 <label for="email">Inserisci l'email</label>
@@ -123,8 +180,9 @@
     </aside>
     <footer>
         <h3>Blog epicode &copy;2023</h3>
-        <p>Testata online di Mario Rossi, registrata con prot n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233. <br>
-        <a href="mailto:email@example.com">info@epicode.school</a>
+        <p>Testata online di Mario Rossi, registrata con prot n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.
+            <br>
+            <a href="mailto:email@example.com">info@epicode.school</a>
         </p>
     </footer>
 </body>
